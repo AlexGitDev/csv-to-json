@@ -14,7 +14,7 @@ import java.io.Reader;
 
 public class CsvToJson  {
     private static final Logger log = LoggerFactory.getLogger(CsvToJson.class);
-    //
+    // bug 1
 
     public String toString(){
         return getClass().getSimpleName()+"("+hashCode()+")";
