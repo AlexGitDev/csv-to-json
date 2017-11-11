@@ -24,8 +24,7 @@ public class CsvToJson  {
         try{
             Reader reader = new InputStreamReader(new ByteArrayInputStream(data));
             Iterable<CSVRecord> records = CSVFormat.EXCEL.parse(reader);
-
-            //StringBuilder result = new StringBuilder();
+            //
             JSONArray result = new JSONArray();
             for (CSVRecord record : records) {
                 JSONObject row = new JSONObject();
