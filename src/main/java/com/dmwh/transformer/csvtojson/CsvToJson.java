@@ -33,15 +33,6 @@ public class CsvToJson  {
                 }
                 result.put(row);
             }
-//            for (CSVRecord record : records) {
-//                JSONArray row = new JSONArray();
-//                for(int i=0; i<record.size(); i++){
-//                    row.put(record.get(i));
-//                }
-//                result.put(row);
-//            }
-
-
             return result.toString().getBytes();
         }catch(Throwable t){
             log.error(t.getMessage(),t);
